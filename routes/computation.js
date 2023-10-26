@@ -13,9 +13,9 @@ router.get('/', function (req, res, next) {
         }     
         res.writeHead(200, { 'Content-Type': 'text/html' });
         
-        res.write('<br>Math.fround() applied to ' + value + ' is ' + Math.atan(value))
-        res.write('<br>Math.random() applied to ' + value + ' is ' + Math.exp(value))
-        res.write('<br>Math.round() applied to ' + value + ' is ' + Math.expm1(value))
+        res.write('<br>Math.atan() applied to ' + value + ' is ' + Math.atan(value))
+        res.write('<br>Math.exp() applied to ' + value + ' is ' + Math.exp(value))
+        res.write('<br>Math.expm1() applied to ' + value + ' is ' + Math.expm1(value))
         res.end()
     }
 
